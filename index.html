@@ -12,7 +12,7 @@
 
 		<link href="css/style.css" rel="stylesheet" />
 		<link href="css/responsive.css" rel="stylesheet" />
-		<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel='dns-prefetch' href='//s.w.org' />
 	</head>
 	<body>
@@ -27,11 +27,11 @@
 					<div id="custom-search-input" class="ml-4">
             <div class="input-group col-md-12">
 							<span class="input-group-btn">
-                  <button class="btn btn-danger" type="button">
-                      <span class=" glyphicon glyphicon-search"></span>
-                  </button>
+                <button class="btn btn-danger btn-search" type="button">
+                  <!--img class="" src="images/search.svg" width="14" height="14" alt="search"/-->
+                </button>
               </span>
-              <input type="text" class="  search-query form-control" placeholder="Search" />
+              <input type="text" class="  search-query form-control" placeholder="Search here…" />
 							<!--span class="cross"></span-->
             </div>
           </div>
@@ -88,9 +88,10 @@
 										 <option value="desc" selected>Newest-Oldest</option>
 										 <option value="asc">Oldest-Newest</option>
 									 </select>
-									 <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-									 </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-											 class="glyphicon glyphicon-th"></span>Grid</a>
+									 <div class="d-flex view-style-links">
+										 <a href="#" id="grid" class="btn btn-default active"><i class="fas fa-th-large"></i></a>
+										 <a href="#" id="list" class="btn btn-default"><i class="fas fa-bars"></i></a>
+									 </div>
 							 </div>
 					 </div>
 					 <div id="feeds" class="col-12 px-0 d-flex justify-content-between flex-wrap">

@@ -44,15 +44,20 @@ header.header {
   font-family: 'helveticaneuelight';
   font-size: 12px;
   color: #fff;
+  padding-left: 32px;
 }
 
 #custom-search-input button {
     border: 0;
-    background: none;
+    background: url(../images/search.svg);
     /** belows styles are working good */
     padding: 2px 5px;
     width: 14px;
     height: 14px;
+    position: absolute;
+    z-index: 1000;
+    top: 9px;
+    left: 26px;
 }
 #custom-search-input .cross {
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
@@ -299,4 +304,32 @@ header.header {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 20px;
+}
+#feeds .item.list-item .item-cards-wrapper {
+  display: none !important;
+}
+.view-style-links #grid {
+  width: 46px;
+  height: 30px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px 0px 0px 18px;
+}
+.view-style-links #list {
+  width: 46px;
+  height: 30px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px 0px 0px 18px;
+}
+.view-style-links .btn {
+  background: #4A4B50 0% 0% no-repeat padding-box;
+  color: #fff;
+  max-height: 32px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+}
+.view-style-links .btn.active {
+  opacity: 1
 }
