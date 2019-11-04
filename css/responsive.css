@@ -19,5 +19,12 @@
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
+  .sidebar ul {
+    height: 100%;
+  }
+  .sidebar ul li.user-icon {
+    position: fixed;
+    bottom: 0;
+    width: 60px;
+  }
 }

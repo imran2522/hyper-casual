@@ -118,6 +118,7 @@ header.header {
 }
 .sidebar ul {
   padding-left: 0;
+  position: relative;
 }
 .sidebar ul li {
   list-style: none;
@@ -129,6 +130,16 @@ header.header {
   padding: 1.1875rem 1rem;
   max-height: 60px;
   width: 100%;
+  position: relative;
+}
+.sidebar ul li a .red-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #FF0058 0% 0% no-repeat padding-box;
+  top: 34px;
+  left: 34px;
+  border-radius: 50%;
 }
 .sidebar ul li a.active,
 .sidebar ul li a:hover {
@@ -299,6 +310,9 @@ header.header {
   font-family: 'helveticaneuebold';
   font-size: 8px;
 }
+#feeds .item .title-desc .follow.done {
+  background: #A1A1A5 0% 0% no-repeat padding-box;
+}
 #feeds .item  .badge {
   width: 50px;
   height: 17px;
@@ -361,4 +375,45 @@ header.header {
 }
 .devtrack-body {
   background: #4A4B52 0% 0% no-repeat padding-box;
+  padding-left: 23px;
+}
+.devtrack-body ul {
+  padding-left: 0;
+}
+.devtrack-body ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 23px;
+  cursor: pointer;
+}
+.devtrack-body ul li:hover,
+.devtrack-body ul li.active {
+  background: #5A5C65 0% 0% no-repeat padding-box;
+}
+.devtrack-body ul li .dev-name {
+  /*font-size: 21px;*/
+}
+.devtrack-body ul li .starred {
+  background-image: url(../images/star-grey.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 19px;
+  width: 19px;
+  height: 19px;
+}
+.devtrack-body ul li .starred.yes {
+  background-image: url(../images/fav-star.svg);
+}
+.devtrack-body ul li .status {
+  margin-top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.devtrack-body ul li .status.active {
+  background: #FF0058 0% 0% no-repeat padding-box;
+}
+.devtrack-body ul li .have-sub {
+
 }

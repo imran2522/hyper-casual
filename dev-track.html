@@ -63,22 +63,25 @@
 			<aside class="sidebar">
 				<ul>
 					<li>
-						<a class="active" href="#"><img class="" src="images/Feed-green.svg" width="22" height="22" alt="feed"/></a>
+						<a class="" href="#"><img class="" src="images/Feed-green.svg" width="22" height="22" alt="feed"/></a>
 					</li>
 					<li>
 						<a class="" href="#"><img class="" src="images/star-grey.svg" width="22" height="22" alt="star"/></a>
 					</li>
 					<li>
-						<a class="" href="#"><img class="" src="images/anony.svg" width="22" height="22" alt="anony"/></a>
+						<a class="active" href="#"><img class="" src="images/anony-purp.svg" width="22" height="22" alt="anony"/><span class="red-dot"></span></a>
 					</li>
 					<li>
 						<a class="" href="#"><img class="" src="images/graph.svg" width="22" height="22" alt="graph"/></a>
+					</li>
+					<li class="user-icon">
+						<a class="" href="#"><img class="" src="images/user.svg" width="22" height="22" alt="user"/></a>
 					</li>
 				</ul>
 			</aside>
 			<div class="page-wrapper sidebar-page">
 				<div class="col-12 px-0">
-					 <div class="col-12 px-0 d-flex justify-content-between">
+					 <div class="col-12 px-0 pb-3 d-flex justify-content-between">
 						   <div class="page-title-wrapper">
 								 <h1 class="page-title">Developer Tracker</h1>
 								 <p>There have been <span id="app-no"><b>14</b></span> new app releases from the developers you follow since you last logged in</p>
@@ -100,7 +103,24 @@
 								 <div class="devtrack-head col-12">
 									 Developers
 								 </div>
-								 <div class="devtrack-body col-12">
+								 <div class="devtrack-body col-12 px-0">
+									 <ul class="devlopers">
+										 <li>
+											 <span class="dev-name mr-2">Developer Name</span><span class="starred yes mx-2"></span><span class="status active"></span>
+										 </li>
+										 <li>
+											 <span class="dev-name mr-2">Developer Name</span><span class="starred yes mx-2"></span><span class="status"></span>
+										 </li>
+										 <li>
+											 <span class="dev-name mr-2">Developer Name</span><span class="starred mx-2"></span><span class="status"></span>
+										 </li>
+										 <li>
+											 <span class="dev-name mr-2">Developer Name</span><span class="starred mx-2"></span><span class="status"></span>
+										 </li>
+										 <li>
+											 <span class="dev-name mr-2">Developer Name</span><span class="starred mx-2"></span><span class="have-sub">></span>
+										 </li>
+									 </ul>
 								 </div>
 							 </div>
 						 </div>
@@ -114,11 +134,11 @@
 										 <div class="item-title-wrapper d-block ml-3">
 											 <div class="item-title d-flex mb-2">
 												 <span>Game Name</span>
-												 <img class="ml-2" src="images/star-grey.svg" width="24" height="24" alt="star"/>
+												 <img class="ml-2" src="images/fav-star.svg" width="24" height="24" alt="star"/>
 											 </div>
 											 <div class="title-desc d-flex">
 												 <span class"dev">by DeveloperName</span>
-												 <a class="follow ml-3"><img class="mr-2" src="images/anony.svg" width="11" height="11" alt="anony"/> FOLLOW</a>
+												 <a class="follow done ml-3"><img class="mr-2" src="images/anony-white.svg" width="11" height="11" alt="anony"/> UNFOLLOW</a>
 											 </div>
 											 <div class="other-info">
 												 X hours ago</br>
