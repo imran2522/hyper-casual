@@ -417,3 +417,69 @@ header.header {
 .devtrack-body ul li .have-sub {
 
 }
+/*charts page*/
+#charts .item {
+  border-bottom: 1px solid #fff;
+  padding: 15px 0;
+}
+#charts .item.expanded {
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #43444A 0%, #2D2D31 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px #00000029;
+}
+#charts .item .icon-main {
+  width: 50px;
+  height: 51px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: 'helveticaneuebold';
+  font-weight: bold;
+  font-size: 7px;
+}
+#charts .item .no-holder,
+#charts .item .dev,
+#charts .item .rel-date {
+  font-family: 'helveticaneuelight';
+  font-size: 21px;
+}
+#charts .item .app-name {
+  font-family: 'helveticaneuelight';
+  font-size: 34px;
+}
+#charts .item .follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 17px;
+  background: #9D00FF 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+  opacity: 1;
+  font-family: 'helveticaneuebold';
+  font-size: 8px;
+}
+#charts .item .follow.done {
+  background: #A1A1A5 0% 0% no-repeat padding-box;
+}
+#charts .item .rating i::before {
+  cursor: pointer;
+}
+#charts .item:not(.expanded)  .item-cards-wrapper {
+  display: none !important;
+}
+#charts .item .item-card {
+  width: 16%;
+  height: 347px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  margin-right: 60px;
+}
+#charts .item .item-card:last-child {
+  margin-right: 0;
+}

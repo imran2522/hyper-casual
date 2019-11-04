@@ -21,5 +21,16 @@ $(document).ready(function(){
     $(this).addClass('active');
     $('#list').removeClass('active');
   });
+  $( ".chart-toggle" ).each(function( index ) {
+    $(this).click(function() {
+      $( this ).closest('.item').toggleClass( "expanded" );
+      if ($(this).hasClass( "fa-angle-down" )) {
+        $(this).removeClass('fa-angle-down').addClass('fa-angle-up');
+      }
+      else {
+        $(this).removeClass('fa-angle-up').addClass('fa-angle-down');
+      }
+    });
+  });
   //$('#grid').click(function(event){event.preventDefault();$('#feeds .item').removeClass('list-item');
 });
