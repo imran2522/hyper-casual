@@ -564,3 +564,13 @@ form.profile-form .logout-btn {
 .page-footer .footer-links a span {
   color: #000;
 }
+.green {
+  color: #00e600;
+}
+.access-feeds-cont .page-title {
+  font-size: 50px;
+}
+.access-feeds-cont p {
+  font-family: 'helveticaneuethin';
+  font-size: 18px;
+}
