@@ -10,9 +10,6 @@ body {
   color: #fff;
   height: 100%;
 }
-body.admin-view {
-  background: #325038;
-}
 header.header {
   background-color: #3C3D44;
   height: 60px;
@@ -260,7 +257,10 @@ header ul.admin-controls li a:hover {
   padding-right: 155px;
   padding-bottom: 40px;
 }
-body.admin-view .page-wrapper {
+.page-wrapper.admin-view {
+  background: #325038;
+}
+.admin-view.page-wrapper {
   padding-right: 80px;
 }
 .page-wrapper.sidebar-page {
