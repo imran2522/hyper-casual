@@ -32,5 +32,11 @@ $(document).ready(function(){
       }
     });
   });
+  $( ".chart-check" ).each(function( index ) {
+    $(this).change(function () {
+      $( this ).closest('.item').toggleClass( "highlight" );
+    });
+  });
+
   //$('#grid').click(function(event){event.preventDefault();$('#feeds .item').removeClass('list-item');
 });
