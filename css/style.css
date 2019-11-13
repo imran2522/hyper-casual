@@ -743,8 +743,47 @@ form.profile-form .logout-btn {
   font-size: 21px;
 }
 .reg-form-cont .triangle {
-  width: 19px;
-  height: 23px;
-  transform: matrix(0, 1, -1, 0, 0, 0);
-  background: transparent linear-gradient(37deg, #06B0FF 0%, #FC5800 0%, #F59A1E 100%) 0% 0% no-repeat padding-box;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11.5px 0 11.5px 19px;
+  border-color: transparent transparent transparent #F59A1E;
+  position: absolute;
+  right: 3rem;
+}
+.landing-top {
+  position: relative;
+}
+.landing-top:before {
+  background: transparent linear-gradient(115deg, #FF5800 0%, #FC5800 0%, #F59A1E 100%) 0% 0% no-repeat padding-box;
+  content:'';
+  position:absolute;
+  top:0;
+  left: -6%;
+  bottom:4px;
+  margin-left:-50px;
+   border-radius: 50% / 100%;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   width: 117%;
+}
+.landing-title {
+  font-family: 'helveticaneuelight';
+  font-size: 48px;
+}
+.landing-top .page-title-wrapper {
+  z-index: 9999;
+}
+.landing-top .login-btn {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  color: #000 !important;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 37px;
+  width: 123px;
+  height: 61px;
+  font-family: 'helveticaneuelight';
+  font-size: 18px;
 }
