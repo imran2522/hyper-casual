@@ -261,6 +261,12 @@ header ul.admin-controls li a:hover {
   background: #325038;
   height: 100vh;
 }
+.page-wrapper.w-hsb {
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 60px;
+}
 .admin-view.page-wrapper {
   padding-right: 80px;
 }
@@ -508,10 +514,13 @@ header ul.admin-controls li a:hover {
   margin-right: 0;
 }
 /*profile page*/
-form.profile-form {
+form.profile-form,
+form.reg-form {
   font-family: 'helveticaneuelight';
 }
-form.profile-form input {
+form.profile-form input,
+form.subs-form .form-control,
+form.reg-form .form-control {
   /*background: #606060 0% 0% no-repeat padding-box;*/
   box-shadow: 0px 4px 6px #00000029;
   border-radius: 22px;
@@ -519,6 +528,10 @@ form.profile-form input {
   height: 32px;
   font-size: 13px;
   border: none;
+}
+form.subs-form .form-control,
+form.reg-form .form-control {
+  opacity: 1;
 }
 form.profile-form input:focus {
   background: #fff !important;
@@ -533,6 +546,10 @@ form.profile-form .submit {
   background: #06B0FF 0% 0% no-repeat padding-box;
   font-size: 1rem;
   color: #fff;
+}
+form.subs-form .submit {
+  background: transparent linear-gradient(97deg, #FC5800 0%, #F59A1E 100%) 0% 0% no-repeat padding-box;
+  height: auto;
 }
 form.profile-form .logout-btn {
   height: 33px;
@@ -588,7 +605,8 @@ form.profile-form .logout-btn {
 .green {
   color: #00e600;
 }
-.access-feeds-cont .page-title {
+.access-feeds-cont .page-title,
+.subs-form-cont .page-title {
   font-size: 50px;
 }
 .access-feeds-cont p {
@@ -687,4 +705,46 @@ form.profile-form .logout-btn {
 }
 .trash-btn {
   background: #FF056E 0% 0% no-repeat padding-box;
+}
+.subs-form-cont h2 {
+  font-family: 'helveticaneuelight';
+  font-size: 47px;
+}
+.reg-form-cont h2 {
+  font-family: 'helveticaneuelight';
+  font-size: 35px;
+}
+.reg-form {
+  background: #3C3D44 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  padding: 20px 38px;
+}
+.reg-form label {
+  font-size: 22px;
+}
+.reg-form .form-control {
+  height: 33px;
+}
+.reg-form .submit {
+  background: transparent linear-gradient(97deg, #FC5800 0%, #F59A1E 100%) 0% 0% no-repeat padding-box;
+  border-radius: 37px;
+  border: none;
+  font-size: 20px;
+}
+.reg-form-cont .forget-pass {
+  color: #fff;
+}
+.reg-form-cont .reg-btn {
+  background: #3C3D44 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px #00000029;
+  border-radius: 27px;
+  color: #fff;
+  font-family: 'helveticaneuelight';
+  font-size: 21px;
+}
+.reg-form-cont .triangle {
+  width: 19px;
+  height: 23px;
+  transform: matrix(0, 1, -1, 0, 0, 0);
+  background: transparent linear-gradient(37deg, #06B0FF 0%, #FC5800 0%, #F59A1E 100%) 0% 0% no-repeat padding-box;
 }

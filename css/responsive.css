@@ -27,4 +27,7 @@
     bottom: 0;
     width: 60px;
   }
+  form.subs-form .submit {
+    width: 300px;
+  }
 }
