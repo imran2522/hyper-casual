@@ -568,6 +568,10 @@ form.profile-form .logout-btn {
   background: transparent linear-gradient(128deg, #FC5800 0%, #F59A1E 100%) 0% 0% no-repeat padding-box;
   padding: 25px 28px;
 }
+.access-note-cont.subs .access-note {
+  padding-top: 160px;
+  padding-bottom: 65px;
+}
 .access-note-cont .access-title {
   font-family: 'helveticaneuethin';
   font-size: 38px;
@@ -786,4 +790,44 @@ form.profile-form .logout-btn {
   height: 61px;
   font-family: 'helveticaneuelight';
   font-size: 18px;
+}
+.landing-feeds-cont,
+.landing-features-cont,
+.landing-pricing-cont .pricing-title  {
+  font-family: 'helveticaneuelight';
+}
+.landing-feeds-cont .feed-title,
+.landing-features-cont .features-heading,
+.landing-pricing-cont .pricing-title {
+  font-size: 50px;
+}
+.landing-feeds-cont .feed-content {
+  font-size: 25px;
+}
+.landing-feeds-cont .feed-screenshot-cont {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.landing-feeds-cont .screenshot-text {
+  color: #000000;
+  font-size: 50px;
+}
+.landing-feeds-cont .feed-screenshot-cont img {
+  max-width: 100%;
+}
+.landing-features-cont {
+  background: #48494F 0% 0% no-repeat padding-box;
+  /*border: 1px solid #707070;*/
+}
+.landing-features-cont .landing-features .feature {
+  width: 33%;
+  padding-bottom: 2.5rem;
+  padding-top: 2rem;
+}
+.landing-features-cont .landing-features .feature .feature-title {
+  font-size: 29px;
+}
+a.cancel-sub {
+  color: #DE0255;
 }
