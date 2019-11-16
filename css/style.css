@@ -259,7 +259,10 @@ header ul.admin-controls li a:hover {
 }
 .page-wrapper.admin-view {
   background: #325038;
-  height: 100vh;
+  height: 100%;
+}
+.page-wrapper.admin-view.trash {
+  background: #8E4D4D;
 }
 .page-wrapper.w-hsb {
   margin: auto;
@@ -451,6 +454,9 @@ header ul.admin-controls li a:hover {
 }
 #charts .item.highlight {
   background: #7d7d7d;
+}
+#charts.admin-trash .item.highlight {
+  background: #b97a7a;
 }
 #charts .item.expanded {
   background: transparent linear-gradient(180deg, #FFFFFF 0%, #43444A 0%, #2D2D31 100%) 0% 0% no-repeat padding-box;
