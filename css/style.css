@@ -10,6 +10,9 @@ body {
   color: #fff;
   height: 100%;
 }
+img {
+  max-width: 100%;
+}
 header.header {
   background-color: #3C3D44;
   height: 60px;
@@ -49,18 +52,24 @@ header.header {
   padding-left: 32px;
   padding-right: 30px;
 }
-
+main.light #custom-search-input .search-query {
+  background: #CECECE 0% 0% no-repeat padding-box;
+  color: #000;
+}
+main.light #custom-search-input button {
+  background: url(../images/search-black.svg);
+}
 #custom-search-input button {
-    border: 0;
-    background: url(../images/search.svg);
-    /** belows styles are working good */
-    padding: 2px 5px;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    z-index: 1000;
-    top: 9px;
-    left: 26px;
+  border: 0;
+  background: url(../images/search.svg);
+  /** belows styles are working good */
+  padding: 2px 5px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  z-index: 1000;
+  top: 9px;
+  left: 26px;
 }
 #custom-search-input .cross {
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
@@ -74,6 +83,9 @@ header.header {
   right: 26px;
   top: 7px;
   z-index: 1000;
+}
+main.light #custom-search-input .fas {
+  color: #000;
 }
 .search-query:focus + button {
     z-index: 3;
@@ -108,6 +120,10 @@ header.header {
 }
 .date-field input:focus {
   background: #1D1D20 0% 0% no-repeat padding-box;
+}
+main.light .date-field input {
+  background: #D4D4D4 0% 0% no-repeat padding-box;
+  color: #000;
 }
 .sidebar {
   background-color: #3C3D44;
@@ -154,6 +170,12 @@ header ul.admin-controls li a {
 header ul.admin-controls li a.active,
 header ul.admin-controls li a:hover {
   background: #5A5C65;
+}
+main.light .sidebar ul li a.active,
+main.light .sidebar ul li a:hover,
+main.light header ul.admin-controls li a.active,
+main.light header ul.admin-controls li a:hover {
+  background: #a2a2a2;
 }
 
 /*btn-toggle*/
@@ -256,6 +278,7 @@ header ul.admin-controls li a:hover {
   padding-left: 80px;
   padding-right: 155px;
   padding-bottom: 40px;
+  height: 100%;
 }
 .page-wrapper.admin-view {
   background: #325038;
@@ -263,6 +286,10 @@ header ul.admin-controls li a:hover {
 }
 .page-wrapper.admin-view.trash {
   background: #8E4D4D;
+}
+.page-wrapper.light-view {
+  background: #E2E2E2 0% 0% no-repeat padding-box;
+  color: #585858;
 }
 .page-wrapper.w-hsb {
   margin: auto;
@@ -304,6 +331,10 @@ header ul.admin-controls li a:hover {
   max-width: 49%;
   margin-bottom: 1rem;
 }
+.page-wrapper.light-view #feeds .item {
+  background: #C4C4C4 0% 0% no-repeat padding-box;
+  color: #636363;
+}
 #feeds .item .icon-main {
   width: 90px;
   height: 90px;
@@ -339,6 +370,7 @@ header ul.admin-controls li a:hover {
   opacity: 1;
   font-family: 'helveticaneuebold';
   font-size: 8px;
+  color: #fff;
 }
 #feeds .item .title-desc .follow.done {
   background: #A1A1A5 0% 0% no-repeat padding-box;
@@ -351,6 +383,7 @@ header ul.admin-controls li a:hover {
   font-family: 'helveticaneuebold';
   font-size: 8px;
   padding-top: 4.5px;
+  color: #fff;
 }
 #feeds .item .item-card {
   width: 24%;
@@ -428,7 +461,7 @@ header ul.admin-controls li a:hover {
   background-image: url(../images/star-grey.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 19px;
+  background-size: contain;
   width: 19px;
   height: 19px;
 }

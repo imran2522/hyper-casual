@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="">
+		<title>Hyper Casual</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/responsive.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel='dns-prefetch' href='//s.w.org' />
+	</head>
+	<body>
+		<main class="main-wrapper light">
+			<header class="header d-flex align-item-center justify-content-between">
+				<div class="header-left d-flex align-items-center">
+					<div class="logo mr-1">
+					</div>
+					<div class="site-title ml-3">
+						Hyper Casual Hub
+					</div>
+					<div id="custom-search-input" class="ml-4">
+            <div class="input-group search-input-grp col-md-12">
+							<span class="input-group-btn">
+                <button class="btn btn-danger btn-search" type="button">
+                  <!--img class="" src="images/search.svg" width="14" height="14" alt="search"/-->
+                </button>
+              </span>
+              <input type="text" class="  search-query form-control" placeholder="Search here…" />
+							<span class="fas fa-times hidden"></span>
+            </div>
+          </div>
+					<div class="input-group date-field ml-5">
+						<div class="input-group-append">
+					    <a class="cal-link"><img class="" src="images/calender-black.svg" width="14" height="14" alt="cal"/></a>
+					  </div>
+					  <input type="date" class="form-control" placeholder="Select a Date" aria-label="" aria-describedby="button-addon2" id="datetimepicker1">
+          </div>
+				</div>
+				<div class="header-right d-flex align-items-center justify-content-end">
+					<img class="" src="images/user.svg" width="18" height="22" alt="user"/>
+					<button type="button" class="btn btn-sm btn-toggle btn-user mr-5" data-toggle="button" aria-pressed="true" autocomplete="off">
+		        <div class="handle"></div>
+		      </button>
+					<img class="" src="images/sun.svg" width="21" height="21" alt="sun"/>
+					<button type="button" class="btn btn-sm btn-toggle btn-mode active" data-toggle="button" aria-pressed="true" autocomplete="off">
+		        <div class="handle"></div>
+		      </button>
+					<img class="mr-5" src="images/moon.svg" width="18" height="18" alt="moon"/>
+					<a href="#">
+						<img class="mr-2" src="images/instagram.svg" width="25" height="25" alt="instagram"/>
+					</a>
+					<a href="#">
+						<img class="mr-3" src="images/Facebook.svg" width="25" height="25" alt="Facebook"/>
+					</a>
+				</div>
+			</header>
+			<aside class="sidebar">
+				<ul>
+					<li>
+						<a class="active" href="#"><img class="" src="images/Feed-green.svg" width="22" height="22" alt="feed"/></a>
+					</li>
+					<li>
+						<a class="" href="#"><img class="" src="images/Favourites-white.svg" width="22" height="22" alt="star"/></a>
+					</li>
+					<li>
+						<a class="" href="#"><img class="" src="images/anony-white.svg" width="22" height="22" alt="anony"/></a>
+					</li>
+					<li>
+						<a class="" href="#"><img class="" src="images/graph-white.svg" width="22" height="22" alt="graph"/></a>
+					</li>
+					<li class="user-icon">
+						<a class="" href="#"><img class="" src="images/ProfileIcon-white.svg" width="22" height="22" alt="user"/></a>
+					</li>
+				</ul>
+			</aside>
+			<div class="page-wrapper light-view">
+				<div class="col-12 px-0">
+					 <div class="col-12 px-0 d-flex justify-content-between">
+						   <div class="page-title-wrapper">
+								 <h1 class="page-title">Hello First Name,</h1>
+								 <p>There have been <b>49</b> new app releases since you last logged in</p>
+							 </div>
+							 <div class="btn-group pt-4 mt-2">
+								   <select class="form-control sort-select mr-5">
+										 <option value="desc" selected>Newest-Oldest</option>
+										 <option value="asc">Oldest-Newest</option>
+									 </select>
+									 <div class="d-flex view-style-links">
+										 <a href="#" id="grid" class="btn btn-default active"><i class="fas fa-th-large"></i></a>
+										 <a href="#" id="list" class="btn btn-default"><i class="fas fa-bars"></i></a>
+									 </div>
+							 </div>
+					 </div>
+					 <div id="feeds" class="col-12 px-0 d-flex justify-content-between flex-wrap">
+						 <div class="item  col-12 col-lg-6"><!--item start-->
+							 <div class="item-header d-flex justify-content-between pb-2">
+								 <div class="float-left d-flex">
+									 <div class="icon-main">
+										 Icon
+									 </div>
+									 <div class="item-title-wrapper d-block ml-3">
+										 <div class="item-title d-flex mb-2">
+											 <span>Game Name</span>
+											 <img class="ml-2" src="images/Favourite-dark.svg" width="24" height="24" alt="star"/>
+										 </div>
+										 <div class="title-desc d-flex">
+											 <span class"dev">by DeveloperName</span>
+											 <a class="follow ml-3"><img class="mr-2" src="images/anony-white.svg" width="11" height="11" alt="anony"/> FOLLOW</a>
+										 </div>
+										 <div class="other-info">
+											 X hours ago</br>
+											 X countries
+										 </div>
+									 </div>
+								 </div>
+								 <div class="float-right text-right">
+									 <a class="" href="#"><img class="" src="images/Download.png" width="140" height="46" alt="download"/></a>
+									 <br>
+									 <div class="badge mt-2">NEW</div>
+								 </div>
+							 </div>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula, justo non pellentesque finibus, urna elit posuere leo, in elementum neque sem nec mi. Proin non rutrum leo, ut pharetra magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel</p>
+							 <div class="col-12 px-0 d-flex justify-content-between align-items-center flex-wrap item-cards-wrapper pt-2 pb-2">
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+							 </div>
+						 </div><!--item-end-->
+						 <div class="item  col-12 col-lg-6"><!--item start-->
+							 <div class="item-header d-flex justify-content-between pb-2">
+								 <div class="float-left d-flex">
+									 <div class="icon-main">
+										 Icon
+									 </div>
+									 <div class="item-title-wrapper d-block ml-3">
+										 <div class="item-title d-flex mb-2">
+											 <span>Game Name</span>
+											 <img class="ml-2" src="images/Favourite-dark.svg" width="24" height="24" alt="star"/>
+										 </div>
+										 <div class="title-desc d-flex">
+											 <span class"dev">by DeveloperName</span>
+											 <a class="follow ml-3"><img class="mr-2" src="images/anony-white.svg" width="11" height="11" alt="anony"/> FOLLOW</a>
+										 </div>
+										 <div class="other-info">
+											 X hours ago</br>
+											 X countries
+										 </div>
+									 </div>
+								 </div>
+								 <div class="float-right text-right">
+									 <a class="" href="#"><img class="" src="images/Download.png" width="140" height="46" alt="download"/></a>
+									 <br>
+									 <div class="badge mt-2">NEW</div>
+								 </div>
+							 </div>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula, justo non pellentesque finibus, urna elit posuere leo, in elementum neque sem nec mi. Proin non rutrum leo, ut pharetra magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel</p>
+							 <div class="col-12 px-0 d-flex justify-content-between align-items-center flex-wrap item-cards-wrapper pt-2 pb-2">
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+							 </div>
+						 </div><!--item-end-->
+						 <div class="item  col-12 col-lg-6"><!--item start-->
+							 <div class="item-header d-flex justify-content-between pb-2">
+								 <div class="float-left d-flex">
+									 <div class="icon-main">
+										 Icon
+									 </div>
+									 <div class="item-title-wrapper d-block ml-3">
+										 <div class="item-title d-flex mb-2">
+											 <span>Game Name</span>
+											 <img class="ml-2" src="images/Favourite-dark.svg" width="24" height="24" alt="star"/>
+										 </div>
+										 <div class="title-desc d-flex">
+											 <span class"dev">by DeveloperName</span>
+											 <a class="follow ml-3"><img class="mr-2" src="images/anony-white.svg" width="11" height="11" alt="anony"/> FOLLOW</a>
+										 </div>
+										 <div class="other-info">
+											 X hours ago</br>
+											 X countries
+										 </div>
+									 </div>
+								 </div>
+								 <div class="float-right text-right">
+									 <a class="" href="#"><img class="" src="images/Download.png" width="140" height="46" alt="download"/></a>
+									 <br>
+									 <div class="badge mt-2">NEW</div>
+								 </div>
+							 </div>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula, justo non pellentesque finibus, urna elit posuere leo, in elementum neque sem nec mi. Proin non rutrum leo, ut pharetra magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel</p>
+							 <div class="col-12 px-0 d-flex justify-content-between align-items-center flex-wrap item-cards-wrapper pt-2 pb-2">
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+							 </div>
+						 </div><!--item-end-->
+						 <div class="item  col-12 col-lg-6"><!--item start-->
+							 <div class="item-header d-flex justify-content-between pb-2">
+								 <div class="float-left d-flex">
+									 <div class="icon-main">
+										 Icon
+									 </div>
+									 <div class="item-title-wrapper d-block ml-3">
+										 <div class="item-title d-flex mb-2">
+											 <span>Game Name</span>
+											 <img class="ml-2" src="images/Favourite-dark.svg" width="24" height="24" alt="star"/>
+										 </div>
+										 <div class="title-desc d-flex">
+											 <span class"dev">by DeveloperName</span>
+											 <a class="follow ml-3"><img class="mr-2" src="images/anony-white.svg" width="11" height="11" alt="anony"/> FOLLOW</a>
+										 </div>
+										 <div class="other-info">
+											 X hours ago</br>
+											 X countries
+										 </div>
+									 </div>
+								 </div>
+								 <div class="float-right text-right">
+									 <a class="" href="#"><img class="" src="images/Download.png" width="140" height="46" alt="download"/></a>
+									 <br>
+									 <div class="badge mt-2">NEW</div>
+								 </div>
+							 </div>
+							 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula, justo non pellentesque finibus, urna elit posuere leo, in elementum neque sem nec mi. Proin non rutrum leo, ut pharetra magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel</p>
+							 <div class="col-12 px-0 d-flex justify-content-between align-items-center flex-wrap item-cards-wrapper pt-2 pb-2">
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+								 <div class="item-card">
+								 </div>
+							 </div>
+						 </div><!--item-end-->
+
+
+					 </div>
+				</div>
+			</div>
+		</main>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+	</body>
+</html>
